@@ -59,8 +59,23 @@
             }
         }
 
+        function App() {
+
+            function handleClick(e) {
+                alert('The link was clicked.');
+            }
+
+            return (
+                <div>
+                    <Clock onClick={handleClick}/>
+                    <Clock/>
+                    <Clock/>
+                </div>
+            )
+        }
+
         ReactDOM.render(
-            <Clock />,
+            <App />,
             document.getElementById("root")
         )
     </script>
